@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key, this.title}) : super(key: key);
@@ -21,7 +22,23 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            IconButton(
+              icon: Icon(FontAwesomeIcons.bars),
+              onPressed: () => print('oi'),
+            ),
+            IconButton(
+              icon: Icon(FontAwesomeIcons.twitter),
+              onPressed: () => print('oi'),
+            ),
+            IconButton(
+              icon: Icon(FontAwesomeIcons.star),
+              onPressed: () => print('oi'),
+            )
+          ],
+        ),
       ),
       body: Center(
         child: Column(
