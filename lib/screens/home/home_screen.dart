@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:twitter_replica/components/bottom_nav_bar_component.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key, this.title}) : super(key: key);
@@ -59,6 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
+      bottomNavigationBar: BottomNavBarCompoenet(),
     );
   }
 }
